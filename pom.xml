@@ -1,0 +1,38 @@
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>la.doosoft.cas.client</groupId>
+	<artifactId>cas-clients</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0</version>
+	<modules>
+		<module>cas-rest-client</module>
+		<module>cas-web-client</module>
+	</modules>
+
+	<scm>
+		<connection>scm:git:ssh://github.com/eddumelendez/cas-clients.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/eddumelendez/cas-clients.git</developerConnection>
+		<url>https://github.com/eddumelendez/cas-clients</url>
+	</scm>
+
+	<properties>
+		<java-version>1.6</java-version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<target>${java-version}</target>
+					<source>${java-version}</source>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
